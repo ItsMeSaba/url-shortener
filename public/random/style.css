@@ -1,0 +1,44 @@
+.randomUrl {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    max-width: 350px;
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+
+.randomUrl > * {
+    outline: none;
+}
+
+.info {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.randomUrl > input[type='text'] {
+    background-color: rgb(235, 235, 235);
+    border: none;
+    border-bottom: solid 2px rgb(39, 174, 96);
+    padding: 0 2px 0 10px;
+}
+
+.randomUrl > input[type='submit'] {
+    padding: 10px 15px;
+    border: solid 2px rgb(39, 174, 96);
+    background-color: rgb(39, 174, 96);
+    color: white;
+    cursor: pointer;
+}
+
+@media(max-width: 768px) {
+    .randomUrl {
+        grid-template-columns: 1fr;
+        max-width: none;
+    }
+
+    .randomUrl > input[type='text'] {
+        margin: 0 0 10px 0;
+        padding: 10px 3px 10px 8px;
+        width: 100%;
+    }
+}

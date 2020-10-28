@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random URL</title>
+    <link rel="stylesheet" href="/random/style.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class='card grid'>
+
+        <div class='left'>
+
+            <h1>URL Shortener</h1>
+
+            <form action="" class='randomUrl' id="mainForm">
+                <input type="text" id='url' placeholder='Enter URL'>
+
+                <input type="submit" value='Shorten' />
+            </form>
+            
+            <a target='_blank' class="info"></a>
+        </div>
+
+        
+        <div class="right">
+            <img src='/images/boi.jpg'>
+        </div>
+
+        <nav>
+            <a href="/">Random</a>
+            <a href="/custom">Custom</a>
+        </nav>
+    </div>
+
+
+    <script>
+        document.documentElement.style.setProperty('--bodyHeight', `${window.innerHeight}px`);
+    </script>
+    <script src="/sendRequest.js"></script>
+</body>
+</html>
