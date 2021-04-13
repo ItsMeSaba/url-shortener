@@ -62,6 +62,7 @@ router.post('/createUrl', async (req, res) => {
             return true;
         }
         
+        //If url already exists you can rewrite it
         await Urls.updateOne({ url : url }, { $set : { newUrl : newUrl } });
         
         res.status(200).send(newUrl);
